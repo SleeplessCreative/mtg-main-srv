@@ -1,7 +1,7 @@
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
-const error = require("../error");
+const error = require("../../middlewares/error");
 const db = require("../../models");
 
 /**

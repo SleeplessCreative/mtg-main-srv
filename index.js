@@ -19,7 +19,7 @@ app.get("/", (req, res, next) => {
   res.status(200).json("Welcome to the server side of Mantagi!");
 });
 
-app.use("/api/is-auth", isAuth);
+// app.use("/api/is-auth", isAuth);
 
 app.use("/api/auth", authRoutes);
 // app.use("/api/auth/register", (req, res, next) => {
