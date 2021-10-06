@@ -21,9 +21,5 @@ module.exports = (req, res, next) => {
     throw error;
   }
   req.userId = decodedToken.userId;
-
-  return res.status(200).json({
-    message: "Authenticated",
-  });
   next();
 };
